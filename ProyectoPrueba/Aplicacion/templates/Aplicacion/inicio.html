@@ -1,0 +1,361 @@
+{% extends "Aplicacion/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+   
+      <!-- sidebar area start -->
+      <div class="sidebar__area">
+         <div class="sidebar__wrapper">
+            <div class="sidebar__close">
+               <button class="sidebar__close-btn" id="sidebar__close-btn">
+               <span><i class="fal fa-times"></i></span>
+               <span>close</span>
+               </button>
+            </div>
+            <div class="sidebar__content">
+               <div class="logo mb-40">
+                  <a href="index.html">
+                  <img src="{% static 'Aplicacion/assets/img/logo/logo-white.png' %}" alt="logo">
+                  </a>
+               </div>
+               <div class="mobile-menu"></div>
+               <div class="sidebar__action mt-330">
+                  <div class="sidebar__login mt-15">
+                     <a href="#"><i class="far fa-unlock"></i> Log In</a>
+                  </div>
+                  <div class="sidebar__cart mt-20">
+                     <a href="javascript:void(0);" class="cart-toggle-btn">
+                        <i class="far fa-shopping-cart"></i>
+                        <span>2</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- sidebar area end -->      
+      <div class="body-overlay"></div>
+      <!-- sidebar area end -->
+
+
+      <main>
+
+         <!-- hero area start -->
+         <section class="hero__area hero__height grey-bg-3 d-flex align-items-center">
+            <div class="hero__shape">
+               <img class="circle" src="{% static 'Aplicacion/assets/img/icon/hero/hero-circle.png' %}" alt="circle">
+               <img class="circle-2" src="{% static 'Aplicacion/assets/img/icon/hero/hero-circle-2.png' %} " alt="circle">
+               <img class="square" src=" {% static 'Aplicacion/assets/img/icon/hero/hero-square.png' %}" alt="circle">
+               <img class="square-2" src=" {% static 'Aplicacion/assets/img/icon/hero/hero-square-2.png' %}" alt="circle">
+               <img class="dot" src="{% static 'Aplicacion/assets/img/icon/hero/hero-dot.png' %}" alt="circle">
+               <img class="triangle" src="{% static 'Aplicacion/assets/img/icon/hero/hero-triangle.png' %}" alt="circle">
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8">
+                     <div class="hero__content">
+                        <h2 class="hero__title">
+                           <span>Buscamusicos.com</span>
+                          
+                        </h2>
+                        <p>Busca y encientra musicos del todo el mundo </p>
+                        <div class="hero__search">
+                           <form action="#">
+                              <div class="hero__search-inner d-xl-flex">
+                                 <div class="hero__search-input">
+                                    <span><i class="far fa-search"></i></span>
+                                    <input type="text" placeholder="Search for templates">
+                                 </div>
+                                 <button type="submit" class="m-btn ml-20"> <span></span> Buscar</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                     <div class="hero__thumb-wrapper scene ml-70">
+                        <div class="hero__thumb one d-none d-lg-block">
+                           <img class="layer" data-depth="0.2" src="{% static 'Aplicacion/assets/img/hero/hero-1.jpg' %}" alt="">
+                        </div>
+                        <div class="hero__thumb two">
+                           <img class="layer" data-depth="0.3" src="{% static 'Aplicacion/assets/img/hero/hero-2.jpg' %}" alt="">
+                        </div>
+                        <div class="hero__thumb three">
+                           <img class="layer" data-depth="0.4" src="{% static 'Aplicacion/assets/img/hero/hero-3.jpg' %}" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- hero area end -->
+
+        
+
+         <!-- trending area start -->
+         <section class="trending__area pt-110 pb-110 grey-bg">
+            <div class="container">
+               <div class="row align-items-end">
+                  <div class="col-xxl-6 col-xl-6 col-lg col-md-8">
+                     <div class="section__title-wrapper mb-50">
+                        <h2 class="section__title">Aqui  <br> Se listaran Avisos</h2>
+                        <p>buscamusicos.com</p>
+                     </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg col-md-4">
+                     <div class="trending__more d-flex justify-content-md-end  mb-50">
+                        <a href="product.html" class="m-btn m-btn-border"><span></span>Ver todo los avisos</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                                 <img src="{% static 'Aplicacion/assets/img/trending/tren-1.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Zibber WP Theme</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">Business</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$39</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-2.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">React App Landing</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">Technology</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span class="old-price">$29</span>
+                                 <span>$25</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-3.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Digital Marketing</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">marketing</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$16</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-4.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Ad Manager Admin</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">software</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$29</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-5.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">UI Template</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">UI kit</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$44</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-6.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Email Template</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">manager</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$14</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-7.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Multipurpose Store</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">marketing</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$55</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-8.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Responsive Agency</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">agency</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$22</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                     <div class="trending__item d-sm-flex white-bg mb-30 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="trending__thumb mr-25">
+                           <div class="trending__thumb-inner fix">
+                              <a href="product-details.html">
+                              <img src="{% static 'Aplicacion/assets/img/trending/tren-9.jpg' %}" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="trending__content">
+                           <h3 class="trending__title"><a href="product-details.html">Admin Dashboard</a></h3>
+                           <p>Knees up arse blimey say happy days.</p>
+                           <div class="trending__meta d-flex justify-content-between">
+                              <div class="trending__tag">
+                                 <a href="#">application</a>
+                              </div>
+                              <div class="trending__price">
+                                 <span>$49</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- trending area end -->
+
+         <!-- subscribe area start -->
+         <section class="subscribe__area p-relative pt-100 pb-110" data-background="{% static 'Aplicacion/assets/img/bg/subscribe-bg.jpg' %}">
+            <div class="subscribe__icon">
+               <img class="ps" src="{% static 'Aplicacion/assets/img/icon/subscribe/ps.png' %}" alt="">
+               <img class="wp" src="{% static 'Aplicacion/assets/img/icon/subscribe/wp.png' %}" alt="">
+               <img class="html" src="{% static 'Aplicacion/assets/img/icon/subscribe/html.png' %}" alt="">
+               <img class="f" src="{% static 'Aplicacion/assets/img/icon/subscribe/f.png' %}" alt="">
+               <img class="man" src="{% static 'Aplicacion/assets/img/icon/subscribe/man.png' %}" alt="">
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="subscribe__content text-center wow fadeInUp" data-wow-delay=".5s">
+                        <h3 class="subscribe__title">Buscas alguna banda? <br> Suscribete</h3>
+                        <p>prueba gratis!</p>
+                        <div class="subscribe__form wow fadeInUp" data-wow-delay=".7s">
+                           <form action="#">
+                              <input type="email" placeholder="Email Address">
+                              <button type="submit" class="m-btn m-btn-black"><span></span> subscribe </button>
+                           </form>
+                           <p>mas de  20.000+ bandas estan esperando por ti.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- subscribe area end -->
+
+
+
+  
+
+{% endblock %}
